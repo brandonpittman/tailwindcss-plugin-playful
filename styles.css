@@ -765,6 +765,104 @@ video {
           transform: scaleX(1);
 }
 
+@-webkit-keyframes donut-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes donut-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.spin-donut {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.spin-donut:hover {
+  cursor: not-allowed;
+  outline: 0;
+}
+
+.spin-donut:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+}
+
+.spin-donut:after {
+  content: "";
+  position: absolute;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #4299e1;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: donut-spin 1.2s linear infinite;
+          animation: donut-spin 1.2s linear infinite;
+}
+
+.hover\:spin-donut:hover {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.hover\:spin-donut:hover:hover {
+  cursor: not-allowed;
+  outline: 0;
+}
+
+.hover\:spin-donut:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+}
+
+.hover\:spin-donut:hover:after {
+  content: "";
+  position: absolute;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #4299e1;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: donut-spin 1.2s linear infinite;
+          animation: donut-spin 1.2s linear infinite;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -11545,6 +11643,80 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:spin-donut {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  .sm\:spin-donut:hover {
+    cursor: not-allowed;
+    outline: 0;
+  }
+
+  .sm\:spin-donut:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+  }
+
+  .sm\:spin-donut:after {
+    content: "";
+    position: absolute;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #4299e1;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: donut-spin 1.2s linear infinite;
+            animation: donut-spin 1.2s linear infinite;
+  }
+
+  .sm\:hover\:spin-donut:hover {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  .sm\:hover\:spin-donut:hover:hover {
+    cursor: not-allowed;
+    outline: 0;
+  }
+
+  .sm\:hover\:spin-donut:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+  }
+
+  .sm\:hover\:spin-donut:hover:after {
+    content: "";
+    position: absolute;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #4299e1;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: donut-spin 1.2s linear infinite;
+            animation: donut-spin 1.2s linear infinite;
+  }
+
   .sm\:sr-only {
     position: absolute;
     width: 1px;
@@ -22326,6 +22498,80 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:spin-donut {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  .md\:spin-donut:hover {
+    cursor: not-allowed;
+    outline: 0;
+  }
+
+  .md\:spin-donut:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+  }
+
+  .md\:spin-donut:after {
+    content: "";
+    position: absolute;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #4299e1;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: donut-spin 1.2s linear infinite;
+            animation: donut-spin 1.2s linear infinite;
+  }
+
+  .md\:hover\:spin-donut:hover {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  .md\:hover\:spin-donut:hover:hover {
+    cursor: not-allowed;
+    outline: 0;
+  }
+
+  .md\:hover\:spin-donut:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+  }
+
+  .md\:hover\:spin-donut:hover:after {
+    content: "";
+    position: absolute;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #4299e1;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: donut-spin 1.2s linear infinite;
+            animation: donut-spin 1.2s linear infinite;
+  }
+
   .md\:sr-only {
     position: absolute;
     width: 1px;
@@ -33107,6 +33353,80 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:spin-donut {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  .lg\:spin-donut:hover {
+    cursor: not-allowed;
+    outline: 0;
+  }
+
+  .lg\:spin-donut:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+  }
+
+  .lg\:spin-donut:after {
+    content: "";
+    position: absolute;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #4299e1;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: donut-spin 1.2s linear infinite;
+            animation: donut-spin 1.2s linear infinite;
+  }
+
+  .lg\:hover\:spin-donut:hover {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  .lg\:hover\:spin-donut:hover:hover {
+    cursor: not-allowed;
+    outline: 0;
+  }
+
+  .lg\:hover\:spin-donut:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+  }
+
+  .lg\:hover\:spin-donut:hover:after {
+    content: "";
+    position: absolute;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #4299e1;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: donut-spin 1.2s linear infinite;
+            animation: donut-spin 1.2s linear infinite;
+  }
+
   .lg\:sr-only {
     position: absolute;
     width: 1px;
@@ -43888,6 +44208,80 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:spin-donut {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  .xl\:spin-donut:hover {
+    cursor: not-allowed;
+    outline: 0;
+  }
+
+  .xl\:spin-donut:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+  }
+
+  .xl\:spin-donut:after {
+    content: "";
+    position: absolute;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #4299e1;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: donut-spin 1.2s linear infinite;
+            animation: donut-spin 1.2s linear infinite;
+  }
+
+  .xl\:hover\:spin-donut:hover {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  .xl\:hover\:spin-donut:hover:hover {
+    cursor: not-allowed;
+    outline: 0;
+  }
+
+  .xl\:hover\:spin-donut:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+  }
+
+  .xl\:hover\:spin-donut:hover:after {
+    content: "";
+    position: absolute;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #4299e1;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: donut-spin 1.2s linear infinite;
+            animation: donut-spin 1.2s linear infinite;
+  }
+
   .xl\:sr-only {
     position: absolute;
     width: 1px;

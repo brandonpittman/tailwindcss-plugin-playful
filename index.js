@@ -9,5 +9,6 @@ module.exports = {
   },
   handler (bagOfCrap) {
     require('./lib/buttons/grow')(bagOfCrap)
+    require('./lib/spinners/donut')(bagOfCrap)
   }
 }
