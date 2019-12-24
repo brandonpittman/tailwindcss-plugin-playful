@@ -4,12 +4,13 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-&:after	index.js	/^        '&:after': {$/;"	p
-const.bottom	index.js	/^  bottom: 'Y',$/;"	p
-const.left	index.js	/^  left: 'X',$/;"	p
-const.right	index.js	/^  right: 'X'$/;"	p
-const.top	index.js	/^  top: 'Y',$/;"	p
+components.&:after	lib/buttons/grow.js	/^      '&:after': {$/;"	p
+components.overflow	lib/buttons/grow.js	/^      overflow: 'hidden',$/;"	p
+components.transition	lib/buttons/grow.js	/^      transition: 'color 100ms ease-in-out',$/;"	p
+const.bottom	lib/buttons/grow.js	/^  bottom: 'Y',$/;"	p
+const.left	lib/buttons/grow.js	/^  left: 'X',$/;"	p
+const.right	lib/buttons/grow.js	/^  right: 'X'$/;"	p
+const.top	lib/buttons/grow.js	/^  top: 'Y',$/;"	p
+module.exports.config	index.js	/^  config: {$/;"	p
 module.exports.env	.eslintrc.js	/^  env: {$/;"	p
 module.exports.theme	tailwind.config.js	/^  theme: {$/;"	p
-overflow	index.js	/^        overflow: 'hidden',$/;"	p
-transition	index.js	/^        transition: 'color 100ms ease-in-out',$/;"	p
