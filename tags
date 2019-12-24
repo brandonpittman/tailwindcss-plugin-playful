@@ -7,10 +7,7 @@
 components.&:after	lib/buttons/grow.js	/^      '&:after': {$/;"	p
 components.overflow	lib/buttons/grow.js	/^      overflow: 'hidden',$/;"	p
 components.transition	lib/buttons/grow.js	/^      transition: 'color 100ms ease-in-out',$/;"	p
-const.bottom	lib/buttons/grow.js	/^  bottom: 'Y',$/;"	p
-const.left	lib/buttons/grow.js	/^  left: 'X',$/;"	p
-const.right	lib/buttons/grow.js	/^  right: 'X'$/;"	p
-const.top	lib/buttons/grow.js	/^  top: 'Y',$/;"	p
+const.down	lib/buttons/grow.js	/^  down: { direction: 'top', axis: 'Y' },$/;"	p
 module.exports.config	index.js	/^  config: {$/;"	p
 module.exports.env	.eslintrc.js	/^  env: {$/;"	p
 module.exports.theme	tailwind.config.js	/^  theme: {$/;"	p

@@ -621,49 +621,13 @@ video {
   }
 }
 
-.grow-from-bottom {
+.slide-down {
   overflow: hidden;
   -webkit-transition: color 100ms ease-in-out;
   transition: color 100ms ease-in-out;
 }
 
-.grow-from-bottom:after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background-color: #4299e1;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  transition: -webkit-transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  z-index: -1;
-}
-
-.grow-from-bottom:hover {
-  color: white;
-}
-
-.grow-from-bottom:hover:after {
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
-}
-
-.grow-from-top {
-  overflow: hidden;
-  -webkit-transition: color 100ms ease-in-out;
-  transition: color 100ms ease-in-out;
-}
-
-.grow-from-top:after {
+.slide-down:after {
   content: "";
   height: 100%;
   width: 100%;
@@ -684,22 +648,22 @@ video {
   z-index: -1;
 }
 
-.grow-from-top:hover {
+.slide-down:hover {
   color: white;
 }
 
-.grow-from-top:hover:after {
+.slide-down:hover:after {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
 }
 
-.grow-from-left {
+.slide-up {
   overflow: hidden;
   -webkit-transition: color 100ms ease-in-out;
   transition: color 100ms ease-in-out;
 }
 
-.grow-from-left:after {
+.slide-up:after {
   content: "";
   height: 100%;
   width: 100%;
@@ -713,29 +677,29 @@ video {
   transition: -webkit-transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
   z-index: -1;
 }
 
-.grow-from-left:hover {
+.slide-up:hover {
   color: white;
 }
 
-.grow-from-left:hover:after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+.slide-up:hover:after {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 
-.grow-from-right {
+.slide-left {
   overflow: hidden;
   -webkit-transition: color 100ms ease-in-out;
   transition: color 100ms ease-in-out;
 }
 
-.grow-from-right:after {
+.slide-left:after {
   content: "";
   height: 100%;
   width: 100%;
@@ -756,11 +720,47 @@ video {
   z-index: -1;
 }
 
-.grow-from-right:hover {
+.slide-left:hover {
   color: white;
 }
 
-.grow-from-right:hover:after {
+.slide-left:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.slide-right {
+  overflow: hidden;
+  -webkit-transition: color 100ms ease-in-out;
+  transition: color 100ms ease-in-out;
+}
+
+.slide-right:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #4299e1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  z-index: -1;
+}
+
+.slide-right:hover {
+  color: white;
+}
+
+.slide-right:hover:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }

@@ -5,10 +5,10 @@ Add some delightful CSS components to your Tailwind setup!
 ## Buttons
 
 ```css
-.grow-from-left {}
-.grow-from-right {}
-.grow-from-bottom {}
-.grow-from-top {}
+.slide-up {}
+.slide-down {}
+.slide-left {}
+.slide-right {}
 ```
 
 - Use standard Tailwind utilities to modify basic styles. These components just add animated behavior.
