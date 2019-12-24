@@ -1,25 +1,26 @@
 {
-  "name": "tailwindcss-plugin-playful",
-  "version": "1.0.0",
-  "description": "",
+  "name": "tailwindcss-plugin-delight",
+  "version": "0.0.1",
+  "description": "Delightful components for Tailwind CSS.",
   "main": "index.js",
   "dependencies": {
-    "tailwindcss-plugin-content": "0.0.3"
+    "tailwindcss": "^1.2.0-canary.2"
   },
   "devDependencies": {
+    "tailwindcss-plugin-content": "0.0.3",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "resolve": "^1.14.1",
-    "tailwindcss": "^1.2.0-canary.2"
+    "resolve": "^1.14.1"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "scripts": {},
+  "keywords": [
+    "tailwindcss",
+    "plugin"
+  ],
+  "author": "Brandon Pittman",
+  "license": "MIT"
 }

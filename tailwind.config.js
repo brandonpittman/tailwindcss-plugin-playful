@@ -1,12 +1,12 @@
 module.exports = {
   theme: {
-    extend: {},
+    extend: {}
   },
   variants: {
-    padding: ['responsive', 'hover', 'after', 'before']
+    // padding: ['responsive', 'hover', 'after', 'before']
   },
   plugins: [
-    require('tailwindcss-plugin-content'),
+    // require('tailwindcss-plugin-content'),
     require('./index')
-  ],
+  ]
 }
