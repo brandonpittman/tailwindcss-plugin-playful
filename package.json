@@ -1,0 +1,17 @@
+{
+  "name": "tailwindcss-plugin-playful",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "resolve": "^1.14.1",
+    "tailwindcss": "^1.2.0-canary.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
