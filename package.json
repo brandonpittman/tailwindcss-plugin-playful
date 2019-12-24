@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-plugin-delight",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Delightful components for Tailwind CSS.",
   "main": "index.js",
   "dependencies": {
