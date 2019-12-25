@@ -2,13 +2,13 @@ module.exports = {
   config: {
     theme: {
       delight: theme => ({
-        accent: theme('colors.blue.500'),
-        text: 'white'
+        background: theme('colors.blue.500'),
+        foreground: '#fff'
       })
     }
   },
   handler (bagOfCrap) {
-    require('./lib/buttons/grow')(bagOfCrap)
+    require('./lib/buttons/slide')(bagOfCrap)
     require('./lib/spinners/donut')(bagOfCrap)
   }
 }

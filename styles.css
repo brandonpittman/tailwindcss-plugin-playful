@@ -632,7 +632,6 @@ video {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: #4299e1;
   top: 0;
   bottom: 0;
   right: 0;
@@ -649,7 +648,6 @@ video {
 }
 
 .slide-down:hover {
-  color: white;
 }
 
 .slide-down:hover:after {
@@ -668,7 +666,6 @@ video {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: #4299e1;
   top: 0;
   bottom: 0;
   right: 0;
@@ -685,7 +682,6 @@ video {
 }
 
 .slide-up:hover {
-  color: white;
 }
 
 .slide-up:hover:after {
@@ -704,7 +700,6 @@ video {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: #4299e1;
   top: 0;
   bottom: 0;
   right: 0;
@@ -721,7 +716,6 @@ video {
 }
 
 .slide-left:hover {
-  color: white;
 }
 
 .slide-left:hover:after {
@@ -740,7 +734,6 @@ video {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: #4299e1;
   top: 0;
   bottom: 0;
   right: 0;
@@ -757,7 +750,6 @@ video {
 }
 
 .slide-right:hover {
-  color: white;
 }
 
 .slide-right:hover:after {
@@ -790,6 +782,7 @@ video {
 }
 
 .spin-donut {
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: flex;
@@ -802,6 +795,7 @@ video {
 .spin-donut:hover {
   cursor: not-allowed;
   outline: 0;
+  overflow: hidden;
 }
 
 .spin-donut:before {
@@ -811,14 +805,14 @@ video {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: white;
+  background-color: #4299e1;
 }
 
 .spin-donut:after {
   content: "";
   position: absolute;
-  border: 4px solid rgba(0, 0, 0, 0.1);
-  border-left-color: #4299e1;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  border-left-color: #fff;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -827,6 +821,7 @@ video {
 }
 
 .hover\:spin-donut:hover {
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: flex;
@@ -839,6 +834,7 @@ video {
 .hover\:spin-donut:hover:hover {
   cursor: not-allowed;
   outline: 0;
+  overflow: hidden;
 }
 
 .hover\:spin-donut:hover:before {
@@ -848,14 +844,14 @@ video {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: white;
+  background-color: #4299e1;
 }
 
 .hover\:spin-donut:hover:after {
   content: "";
   position: absolute;
-  border: 4px solid rgba(0, 0, 0, 0.1);
-  border-left-color: #4299e1;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  border-left-color: #fff;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -11642,8 +11638,55 @@ video {
   z-index: auto;
 }
 
+.spinner {
+  position: relative;
+  color: transparent !important;
+  pointer-events: none;
+}
+
+.spinner::after {
+  content: '';
+  position: absolute !important;
+  top: calc(50% - (1em / 2));
+  left: calc(50% - (1em / 2));
+  display: block;
+  width: 1em;
+  height: 1em;
+  border: 2px solid currentColor;
+  border-radius: 9999px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  -webkit-animation: spinAround 500ms infinite linear;
+          animation: spinAround 500ms infinite linear;
+}
+
+@-webkit-keyframes spinAround {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinAround {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:spin-donut {
+    overflow: hidden;
     position: relative;
     display: -webkit-box;
     display: flex;
@@ -11656,6 +11699,7 @@ video {
   .sm\:spin-donut:hover {
     cursor: not-allowed;
     outline: 0;
+    overflow: hidden;
   }
 
   .sm\:spin-donut:before {
@@ -11665,14 +11709,14 @@ video {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: white;
+    background-color: #4299e1;
   }
 
   .sm\:spin-donut:after {
     content: "";
     position: absolute;
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    border-left-color: #4299e1;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-left-color: #fff;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -11681,6 +11725,7 @@ video {
   }
 
   .sm\:hover\:spin-donut:hover {
+    overflow: hidden;
     position: relative;
     display: -webkit-box;
     display: flex;
@@ -11693,6 +11738,7 @@ video {
   .sm\:hover\:spin-donut:hover:hover {
     cursor: not-allowed;
     outline: 0;
+    overflow: hidden;
   }
 
   .sm\:hover\:spin-donut:hover:before {
@@ -11702,14 +11748,14 @@ video {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: white;
+    background-color: #4299e1;
   }
 
   .sm\:hover\:spin-donut:hover:after {
     content: "";
     position: absolute;
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    border-left-color: #4299e1;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-left-color: #fff;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -22495,10 +22541,33 @@ video {
   .sm\:z-auto {
     z-index: auto;
   }
+
+  .sm\:spinner {
+    position: relative;
+    color: transparent !important;
+    pointer-events: none;
+  }
+
+  .sm\:spinner::after {
+    content: '';
+    position: absolute !important;
+    top: calc(50% - (1em / 2));
+    left: calc(50% - (1em / 2));
+    display: block;
+    width: 1em;
+    height: 1em;
+    border: 2px solid currentColor;
+    border-radius: 9999px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    -webkit-animation: spinAround 500ms infinite linear;
+            animation: spinAround 500ms infinite linear;
+  }
 }
 
 @media (min-width: 768px) {
   .md\:spin-donut {
+    overflow: hidden;
     position: relative;
     display: -webkit-box;
     display: flex;
@@ -22511,6 +22580,7 @@ video {
   .md\:spin-donut:hover {
     cursor: not-allowed;
     outline: 0;
+    overflow: hidden;
   }
 
   .md\:spin-donut:before {
@@ -22520,14 +22590,14 @@ video {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: white;
+    background-color: #4299e1;
   }
 
   .md\:spin-donut:after {
     content: "";
     position: absolute;
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    border-left-color: #4299e1;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-left-color: #fff;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -22536,6 +22606,7 @@ video {
   }
 
   .md\:hover\:spin-donut:hover {
+    overflow: hidden;
     position: relative;
     display: -webkit-box;
     display: flex;
@@ -22548,6 +22619,7 @@ video {
   .md\:hover\:spin-donut:hover:hover {
     cursor: not-allowed;
     outline: 0;
+    overflow: hidden;
   }
 
   .md\:hover\:spin-donut:hover:before {
@@ -22557,14 +22629,14 @@ video {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: white;
+    background-color: #4299e1;
   }
 
   .md\:hover\:spin-donut:hover:after {
     content: "";
     position: absolute;
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    border-left-color: #4299e1;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-left-color: #fff;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -33350,10 +33422,33 @@ video {
   .md\:z-auto {
     z-index: auto;
   }
+
+  .md\:spinner {
+    position: relative;
+    color: transparent !important;
+    pointer-events: none;
+  }
+
+  .md\:spinner::after {
+    content: '';
+    position: absolute !important;
+    top: calc(50% - (1em / 2));
+    left: calc(50% - (1em / 2));
+    display: block;
+    width: 1em;
+    height: 1em;
+    border: 2px solid currentColor;
+    border-radius: 9999px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    -webkit-animation: spinAround 500ms infinite linear;
+            animation: spinAround 500ms infinite linear;
+  }
 }
 
 @media (min-width: 1024px) {
   .lg\:spin-donut {
+    overflow: hidden;
     position: relative;
     display: -webkit-box;
     display: flex;
@@ -33366,6 +33461,7 @@ video {
   .lg\:spin-donut:hover {
     cursor: not-allowed;
     outline: 0;
+    overflow: hidden;
   }
 
   .lg\:spin-donut:before {
@@ -33375,14 +33471,14 @@ video {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: white;
+    background-color: #4299e1;
   }
 
   .lg\:spin-donut:after {
     content: "";
     position: absolute;
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    border-left-color: #4299e1;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-left-color: #fff;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -33391,6 +33487,7 @@ video {
   }
 
   .lg\:hover\:spin-donut:hover {
+    overflow: hidden;
     position: relative;
     display: -webkit-box;
     display: flex;
@@ -33403,6 +33500,7 @@ video {
   .lg\:hover\:spin-donut:hover:hover {
     cursor: not-allowed;
     outline: 0;
+    overflow: hidden;
   }
 
   .lg\:hover\:spin-donut:hover:before {
@@ -33412,14 +33510,14 @@ video {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: white;
+    background-color: #4299e1;
   }
 
   .lg\:hover\:spin-donut:hover:after {
     content: "";
     position: absolute;
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    border-left-color: #4299e1;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-left-color: #fff;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -44205,10 +44303,33 @@ video {
   .lg\:z-auto {
     z-index: auto;
   }
+
+  .lg\:spinner {
+    position: relative;
+    color: transparent !important;
+    pointer-events: none;
+  }
+
+  .lg\:spinner::after {
+    content: '';
+    position: absolute !important;
+    top: calc(50% - (1em / 2));
+    left: calc(50% - (1em / 2));
+    display: block;
+    width: 1em;
+    height: 1em;
+    border: 2px solid currentColor;
+    border-radius: 9999px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    -webkit-animation: spinAround 500ms infinite linear;
+            animation: spinAround 500ms infinite linear;
+  }
 }
 
 @media (min-width: 1280px) {
   .xl\:spin-donut {
+    overflow: hidden;
     position: relative;
     display: -webkit-box;
     display: flex;
@@ -44221,6 +44342,7 @@ video {
   .xl\:spin-donut:hover {
     cursor: not-allowed;
     outline: 0;
+    overflow: hidden;
   }
 
   .xl\:spin-donut:before {
@@ -44230,14 +44352,14 @@ video {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: white;
+    background-color: #4299e1;
   }
 
   .xl\:spin-donut:after {
     content: "";
     position: absolute;
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    border-left-color: #4299e1;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-left-color: #fff;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -44246,6 +44368,7 @@ video {
   }
 
   .xl\:hover\:spin-donut:hover {
+    overflow: hidden;
     position: relative;
     display: -webkit-box;
     display: flex;
@@ -44258,6 +44381,7 @@ video {
   .xl\:hover\:spin-donut:hover:hover {
     cursor: not-allowed;
     outline: 0;
+    overflow: hidden;
   }
 
   .xl\:hover\:spin-donut:hover:before {
@@ -44267,14 +44391,14 @@ video {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: white;
+    background-color: #4299e1;
   }
 
   .xl\:hover\:spin-donut:hover:after {
     content: "";
     position: absolute;
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    border-left-color: #4299e1;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-left-color: #fff;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -55059,5 +55183,27 @@ video {
 
   .xl\:z-auto {
     z-index: auto;
+  }
+
+  .xl\:spinner {
+    position: relative;
+    color: transparent !important;
+    pointer-events: none;
+  }
+
+  .xl\:spinner::after {
+    content: '';
+    position: absolute !important;
+    top: calc(50% - (1em / 2));
+    left: calc(50% - (1em / 2));
+    display: block;
+    width: 1em;
+    height: 1em;
+    border: 2px solid currentColor;
+    border-radius: 9999px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    -webkit-animation: spinAround 500ms infinite linear;
+            animation: spinAround 500ms infinite linear;
   }
 }
