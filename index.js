@@ -2,7 +2,7 @@ module.exports = {
   config: {
     theme: {
       delight: theme => ({
-        background: theme('colors.teal.500'),
+        ckground: theme('colors.teal.500'),
         foreground: '#fff',
         soft: 'rgba(255, 255, 255, 0.2)'
       })

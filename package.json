@@ -8,7 +8,7 @@
   "description": "Delightful components for Tailwind CSS.",
   "main": "index.js",
   "dependencies": {
-    "hex-to-rgba": "^2.0.1",
+    "tailwindcss-plugin-content": "0.0.3",
     "tailwindcss": "^1.2.0-canary.2"
   },
   "devDependencies": {
@@ -18,11 +18,11 @@
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "resolve": "^1.14.1",
-    "tailwindcss-plugin-content": "0.0.3",
-    "tailwindcss-spinner": "^1.0.0"
+    "resolve": "^1.14.1"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "standard --fix"
+  },
   "keywords": [
     "tailwindcss",
     "plugin"
