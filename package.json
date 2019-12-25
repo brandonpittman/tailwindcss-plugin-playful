@@ -1,4 +1,8 @@
 {
+  "files": [
+    "index.js",
+    "lib"
+  ],
   "name": "tailwindcss-plugin-delight",
   "version": "0.0.5",
   "description": "Delightful components for Tailwind CSS.",
