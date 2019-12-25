@@ -632,7 +632,6 @@ video {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: #38b2ac;
   top: 0;
   bottom: 0;
   right: 0;
@@ -667,7 +666,6 @@ video {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: #38b2ac;
   top: 0;
   bottom: 0;
   right: 0;
@@ -702,7 +700,6 @@ video {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: #38b2ac;
   top: 0;
   bottom: 0;
   right: 0;
@@ -737,7 +734,6 @@ video {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: #38b2ac;
   top: 0;
   bottom: 0;
   right: 0;
@@ -808,8 +804,8 @@ video {
   border: 4px solid currentColor;
   opacity: 0.5;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 100%;
+  height: 100%;
   -webkit-animation: donut-spin 1.2s linear infinite;
           animation: donut-spin 1.2s linear infinite;
 }
@@ -820,8 +816,8 @@ video {
   border: 4px solid transparent;
   border-left-color: currentColor;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 100%;
+  height: 100%;
   -webkit-animation: donut-spin 1.2s linear infinite;
           animation: donut-spin 1.2s linear infinite;
 }
@@ -849,8 +845,8 @@ video {
   border: 4px solid currentColor;
   opacity: 0.5;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 100%;
+  height: 100%;
   -webkit-animation: donut-spin 1.2s linear infinite;
           animation: donut-spin 1.2s linear infinite;
 }
@@ -861,8 +857,8 @@ video {
   border: 4px solid transparent;
   border-left-color: currentColor;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 100%;
+  height: 100%;
   -webkit-animation: donut-spin 1.2s linear infinite;
           animation: donut-spin 1.2s linear infinite;
 }
@@ -11646,52 +11642,6 @@ video {
   z-index: auto;
 }
 
-.spinner {
-  position: relative;
-  color: transparent !important;
-  pointer-events: none;
-}
-
-.spinner::after {
-  content: '';
-  position: absolute !important;
-  top: calc(50% - (1em / 2));
-  left: calc(50% - (1em / 2));
-  display: block;
-  width: 1em;
-  height: 1em;
-  border: 2px solid currentColor;
-  border-radius: 9999px;
-  border-right-color: transparent;
-  border-top-color: transparent;
-  -webkit-animation: spinAround 500ms infinite linear;
-          animation: spinAround 500ms infinite linear;
-}
-
-@-webkit-keyframes spinAround {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes spinAround {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 @media (min-width: 640px) {
   .sm\:spin-donut {
     overflow: hidden;
@@ -11716,8 +11666,8 @@ video {
     border: 4px solid currentColor;
     opacity: 0.5;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
     -webkit-animation: donut-spin 1.2s linear infinite;
             animation: donut-spin 1.2s linear infinite;
   }
@@ -11728,8 +11678,8 @@ video {
     border: 4px solid transparent;
     border-left-color: currentColor;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
     -webkit-animation: donut-spin 1.2s linear infinite;
             animation: donut-spin 1.2s linear infinite;
   }
@@ -11757,8 +11707,8 @@ video {
     border: 4px solid currentColor;
     opacity: 0.5;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
     -webkit-animation: donut-spin 1.2s linear infinite;
             animation: donut-spin 1.2s linear infinite;
   }
@@ -11769,8 +11719,8 @@ video {
     border: 4px solid transparent;
     border-left-color: currentColor;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
     -webkit-animation: donut-spin 1.2s linear infinite;
             animation: donut-spin 1.2s linear infinite;
   }
@@ -22553,28 +22503,6 @@ video {
   .sm\:z-auto {
     z-index: auto;
   }
-
-  .sm\:spinner {
-    position: relative;
-    color: transparent !important;
-    pointer-events: none;
-  }
-
-  .sm\:spinner::after {
-    content: '';
-    position: absolute !important;
-    top: calc(50% - (1em / 2));
-    left: calc(50% - (1em / 2));
-    display: block;
-    width: 1em;
-    height: 1em;
-    border: 2px solid currentColor;
-    border-radius: 9999px;
-    border-right-color: transparent;
-    border-top-color: transparent;
-    -webkit-animation: spinAround 500ms infinite linear;
-            animation: spinAround 500ms infinite linear;
-  }
 }
 
 @media (min-width: 768px) {
@@ -22601,8 +22529,8 @@ video {
     border: 4px solid currentColor;
     opacity: 0.5;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
     -webkit-animation: donut-spin 1.2s linear infinite;
             animation: donut-spin 1.2s linear infinite;
   }
@@ -22613,8 +22541,8 @@ video {
     border: 4px solid transparent;
     border-left-color: currentColor;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
     -webkit-animation: donut-spin 1.2s linear infinite;
             animation: donut-spin 1.2s linear infinite;
   }
@@ -22642,8 +22570,8 @@ video {
     border: 4px solid currentColor;
     opacity: 0.5;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
     -webkit-animation: donut-spin 1.2s linear infinite;
             animation: donut-spin 1.2s linear infinite;
   }
@@ -22654,8 +22582,8 @@ video {
     border: 4px solid transparent;
     border-left-color: currentColor;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
     -webkit-animation: donut-spin 1.2s linear infinite;
             animation: donut-spin 1.2s linear infinite;
   }
@@ -33438,28 +33366,6 @@ video {
   .md\:z-auto {
     z-index: auto;
   }
-
-  .md\:spinner {
-    position: relative;
-    color: transparent !important;
-    pointer-events: none;
-  }
-
-  .md\:spinner::after {
-    content: '';
-    position: absolute !important;
-    top: calc(50% - (1em / 2));
-    left: calc(50% - (1em / 2));
-    display: block;
-    width: 1em;
-    height: 1em;
-    border: 2px solid currentColor;
-    border-radius: 9999px;
-    border-right-color: transparent;
-    border-top-color: transparent;
-    -webkit-animation: spinAround 500ms infinite linear;
-            animation: spinAround 500ms infinite linear;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -33486,8 +33392,8 @@ video {
     border: 4px solid currentColor;
     opacity: 0.5;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
     -webkit-animation: donut-spin 1.2s linear infinite;
             animation: donut-spin 1.2s linear infinite;
   }
@@ -33498,8 +33404,8 @@ video {
     border: 4px solid transparent;
     border-left-color: currentColor;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
     -webkit-animation: donut-spin 1.2s linear infinite;
             animation: donut-spin 1.2s linear infinite;
   }
@@ -33527,8 +33433,8 @@ video {
     border: 4px solid currentColor;
     opacity: 0.5;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
     -webkit-animation: donut-spin 1.2s linear infinite;
             animation: donut-spin 1.2s linear infinite;
   }
@@ -33539,8 +33445,8 @@ video {
     border: 4px solid transparent;
     border-left-color: currentColor;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
     -webkit-animation: donut-spin 1.2s linear infinite;
             animation: donut-spin 1.2s linear infinite;
   }
@@ -44323,28 +44229,6 @@ video {
   .lg\:z-auto {
     z-index: auto;
   }
-
-  .lg\:spinner {
-    position: relative;
-    color: transparent !important;
-    pointer-events: none;
-  }
-
-  .lg\:spinner::after {
-    content: '';
-    position: absolute !important;
-    top: calc(50% - (1em / 2));
-    left: calc(50% - (1em / 2));
-    display: block;
-    width: 1em;
-    height: 1em;
-    border: 2px solid currentColor;
-    border-radius: 9999px;
-    border-right-color: transparent;
-    border-top-color: transparent;
-    -webkit-animation: spinAround 500ms infinite linear;
-            animation: spinAround 500ms infinite linear;
-  }
 }
 
 @media (min-width: 1280px) {
@@ -44371,8 +44255,8 @@ video {
     border: 4px solid currentColor;
     opacity: 0.5;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
     -webkit-animation: donut-spin 1.2s linear infinite;
             animation: donut-spin 1.2s linear infinite;
   }
@@ -44383,8 +44267,8 @@ video {
     border: 4px solid transparent;
     border-left-color: currentColor;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
     -webkit-animation: donut-spin 1.2s linear infinite;
             animation: donut-spin 1.2s linear infinite;
   }
@@ -44412,8 +44296,8 @@ video {
     border: 4px solid currentColor;
     opacity: 0.5;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
     -webkit-animation: donut-spin 1.2s linear infinite;
             animation: donut-spin 1.2s linear infinite;
   }
@@ -44424,8 +44308,8 @@ video {
     border: 4px solid transparent;
     border-left-color: currentColor;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
     -webkit-animation: donut-spin 1.2s linear infinite;
             animation: donut-spin 1.2s linear infinite;
   }
@@ -55207,27 +55091,5 @@ video {
 
   .xl\:z-auto {
     z-index: auto;
-  }
-
-  .xl\:spinner {
-    position: relative;
-    color: transparent !important;
-    pointer-events: none;
-  }
-
-  .xl\:spinner::after {
-    content: '';
-    position: absolute !important;
-    top: calc(50% - (1em / 2));
-    left: calc(50% - (1em / 2));
-    display: block;
-    width: 1em;
-    height: 1em;
-    border: 2px solid currentColor;
-    border-radius: 9999px;
-    border-right-color: transparent;
-    border-top-color: transparent;
-    -webkit-animation: spinAround 500ms infinite linear;
-            animation: spinAround 500ms infinite linear;
   }
 }

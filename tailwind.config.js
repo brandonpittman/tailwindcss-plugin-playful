@@ -7,7 +7,6 @@ module.exports = {
   },
   plugins: [
     // require('tailwindcss-plugin-content'),
-    require('tailwindcss-spinner')(),
     require('./index')
   ]
 }
