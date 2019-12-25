@@ -8,6 +8,7 @@ components.&:after	lib/buttons/slide.js	/^      '&:after': {$/;"	p
 components.overflow	lib/buttons/slide.js	/^      overflow: 'hidden',$/;"	p
 components.transition	lib/buttons/slide.js	/^      transition: 'color 100ms ease-in-out',$/;"	p
 const.down	lib/buttons/slide.js	/^  down: { direction: 'top', axis: 'Y' },$/;"	p
+module.exports	lib/spinners/donut.js	/^module.exports = function ({ addComponents }) {$/;"	f
 module.exports.config	index.js	/^  config: {$/;"	p
 module.exports.env	.eslintrc.js	/^  env: {$/;"	p
 module.exports.theme	tailwind.config.js	/^  theme: {$/;"	p
