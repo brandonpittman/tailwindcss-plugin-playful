@@ -11,6 +11,12 @@ Add some delightful CSS components to your Tailwind setup!
 .slide-right {}
 ```
 
+## Spinners
+
+```css
+.spin-donut {}
+```
+
 - Use standard Tailwind utilities to modify basic styles. These components just add animated behavior.
 - Configure standard accent and text colors to be applied when delight occurs.
 
