@@ -887,6 +887,106 @@ video {
           animation: donut-spin 1.2s linear infinite;
 }
 
+.spin-radial {
+  color: #474E51;
+  padding: 15px;
+  position: relative;
+}
+
+.spin-radial::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  right: -1px;
+  left: -1px;
+  background-color: currentColor;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  transition: transform .3s cubic-bezier(.215,.61,.355,1);
+  transition: transform .3s cubic-bezier(.215,.61,.355,1), -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+}
+
+.spin-radial::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  right: -1px;
+  left: -1px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1);
+  transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+}
+
+.spin-radial:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.spin-radial:hover::after {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0;
+}
+
+.hover\:spin-radial:hover::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  right: -1px;
+  left: -1px;
+  background-color: currentColor;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  transition: transform .3s cubic-bezier(.215,.61,.355,1);
+  transition: transform .3s cubic-bezier(.215,.61,.355,1), -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+}
+
+.hover\:spin-radial:hover::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  right: -1px;
+  left: -1px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1);
+  transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+}
+
+.hover\:spin-radial:hover:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.hover\:spin-radial:hover:hover::after {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -20507,6 +20607,100 @@ video {
             animation: donut-spin 1.2s linear infinite;
   }
 
+  .sm\:spin-radial::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    background-color: currentColor;
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: transform .3s cubic-bezier(.215,.61,.355,1), -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  }
+
+  .sm\:spin-radial::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  }
+
+  .sm\:spin-radial:hover::before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  .sm\:spin-radial:hover::after {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+
+  .sm\:hover\:spin-radial:hover::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    background-color: currentColor;
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: transform .3s cubic-bezier(.215,.61,.355,1), -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  }
+
+  .sm\:hover\:spin-radial:hover::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  }
+
+  .sm\:hover\:spin-radial:hover:hover::before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  .sm\:hover\:spin-radial:hover:hover::after {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+
   .sm\:sr-only {
     position: absolute;
     width: 1px;
@@ -39994,6 +40188,100 @@ video {
     height: 100%;
     -webkit-animation: donut-spin 1.2s linear infinite;
             animation: donut-spin 1.2s linear infinite;
+  }
+
+  .md\:spin-radial::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    background-color: currentColor;
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: transform .3s cubic-bezier(.215,.61,.355,1), -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  }
+
+  .md\:spin-radial::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  }
+
+  .md\:spin-radial:hover::before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  .md\:spin-radial:hover::after {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+
+  .md\:hover\:spin-radial:hover::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    background-color: currentColor;
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: transform .3s cubic-bezier(.215,.61,.355,1), -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  }
+
+  .md\:hover\:spin-radial:hover::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  }
+
+  .md\:hover\:spin-radial:hover:hover::before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  .md\:hover\:spin-radial:hover:hover::after {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
   }
 
   .md\:sr-only {
@@ -59485,6 +59773,100 @@ video {
             animation: donut-spin 1.2s linear infinite;
   }
 
+  .lg\:spin-radial::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    background-color: currentColor;
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: transform .3s cubic-bezier(.215,.61,.355,1), -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  }
+
+  .lg\:spin-radial::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  }
+
+  .lg\:spin-radial:hover::before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  .lg\:spin-radial:hover::after {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+
+  .lg\:hover\:spin-radial:hover::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    background-color: currentColor;
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: transform .3s cubic-bezier(.215,.61,.355,1), -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  }
+
+  .lg\:hover\:spin-radial:hover::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  }
+
+  .lg\:hover\:spin-radial:hover:hover::before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  .lg\:hover\:spin-radial:hover:hover::after {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+
   .lg\:sr-only {
     position: absolute;
     width: 1px;
@@ -78972,6 +79354,100 @@ video {
     height: 100%;
     -webkit-animation: donut-spin 1.2s linear infinite;
             animation: donut-spin 1.2s linear infinite;
+  }
+
+  .xl\:spin-radial::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    background-color: currentColor;
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: transform .3s cubic-bezier(.215,.61,.355,1), -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  }
+
+  .xl\:spin-radial::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  }
+
+  .xl\:spin-radial:hover::before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  .xl\:spin-radial:hover::after {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+
+  .xl\:hover\:spin-radial:hover::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    background-color: currentColor;
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: transform .3s cubic-bezier(.215,.61,.355,1), -webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  }
+
+  .xl\:hover\:spin-radial:hover::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s cubic-bezier(.215,.61,.355,1);
+  }
+
+  .xl\:hover\:spin-radial:hover:hover::before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  .xl\:hover\:spin-radial:hover:hover::after {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
   }
 
   .xl\:sr-only {
