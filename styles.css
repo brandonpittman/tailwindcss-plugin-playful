@@ -794,6 +794,8 @@ video {
           justify-content: center;
   -webkit-box-align: center;
           align-items: center;
+  height: 2rem;
+  width: 2rem;
 }
 
 .spin-donut:hover {
@@ -835,6 +837,8 @@ video {
           justify-content: center;
   -webkit-box-align: center;
           align-items: center;
+  height: 2rem;
+  width: 2rem;
 }
 
 .hover\:spin-donut:hover:hover {
@@ -11387,6 +11391,14 @@ video {
   visibility: hidden;
 }
 
+.hover\:visible:hover {
+  visibility: visible;
+}
+
+.hover\:invisible:hover {
+  visibility: hidden;
+}
+
 .whitespace-normal {
   white-space: normal;
 }
@@ -11656,6 +11668,8 @@ video {
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
+    height: 2rem;
+    width: 2rem;
   }
 
   .sm\:spin-donut:hover {
@@ -11697,6 +11711,8 @@ video {
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
+    height: 2rem;
+    width: 2rem;
   }
 
   .sm\:hover\:spin-donut:hover:hover {
@@ -22249,6 +22265,14 @@ video {
     visibility: hidden;
   }
 
+  .sm\:hover\:visible:hover {
+    visibility: visible;
+  }
+
+  .sm\:hover\:invisible:hover {
+    visibility: hidden;
+  }
+
   .sm\:whitespace-normal {
     white-space: normal;
   }
@@ -22519,6 +22543,8 @@ video {
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
+    height: 2rem;
+    width: 2rem;
   }
 
   .md\:spin-donut:hover {
@@ -22560,6 +22586,8 @@ video {
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
+    height: 2rem;
+    width: 2rem;
   }
 
   .md\:hover\:spin-donut:hover:hover {
@@ -33112,6 +33140,14 @@ video {
     visibility: hidden;
   }
 
+  .md\:hover\:visible:hover {
+    visibility: visible;
+  }
+
+  .md\:hover\:invisible:hover {
+    visibility: hidden;
+  }
+
   .md\:whitespace-normal {
     white-space: normal;
   }
@@ -33382,6 +33418,8 @@ video {
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
+    height: 2rem;
+    width: 2rem;
   }
 
   .lg\:spin-donut:hover {
@@ -33423,6 +33461,8 @@ video {
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
+    height: 2rem;
+    width: 2rem;
   }
 
   .lg\:hover\:spin-donut:hover:hover {
@@ -43975,6 +44015,14 @@ video {
     visibility: hidden;
   }
 
+  .lg\:hover\:visible:hover {
+    visibility: visible;
+  }
+
+  .lg\:hover\:invisible:hover {
+    visibility: hidden;
+  }
+
   .lg\:whitespace-normal {
     white-space: normal;
   }
@@ -44245,6 +44293,8 @@ video {
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
+    height: 2rem;
+    width: 2rem;
   }
 
   .xl\:spin-donut:hover {
@@ -44286,6 +44336,8 @@ video {
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
+    height: 2rem;
+    width: 2rem;
   }
 
   .xl\:hover\:spin-donut:hover:hover {
@@ -54835,6 +54887,14 @@ video {
   }
 
   .xl\:invisible {
+    visibility: hidden;
+  }
+
+  .xl\:hover\:visible:hover {
+    visibility: visible;
+  }
+
+  .xl\:hover\:invisible:hover {
     visibility: hidden;
   }
 
