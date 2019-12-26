@@ -3,11 +3,9 @@ module.exports = {
     extend: {}
   },
   variants: {
-    visibility: ['responsive', 'hover']
-    // padding: ['responsive', 'hover', 'after', 'before']
   },
   plugins: [
-    // require('tailwindcss-plugin-content'),
+    require('tailwindcss-plugin-content'),
     require('./index')
   ]
 }
