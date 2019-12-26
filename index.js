@@ -1,9 +1,11 @@
+const content = require('tailwindcss-plugin-content')
+
 module.exports = {
   config: {
-    ...require('../tailwindcss-plugin-content').config
+    ...content.config
   },
   handler (bagOfCrap) {
-    require('../tailwindcss-plugin-content').handler(bagOfCrap)
+    content.handler(bagOfCrap)
     require('./lib/buttons/slide')(bagOfCrap)
     require('./lib/spinners/donut')(bagOfCrap)
   }

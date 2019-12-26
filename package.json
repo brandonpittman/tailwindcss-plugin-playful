@@ -8,7 +8,7 @@
   "description": "Delightful components for Tailwind CSS.",
   "main": "index.js",
   "dependencies": {
-    "tailwindcss-plugin-content": "0.0.3",
+    "tailwindcss-plugin-content": "0.1.0",
     "tailwindcss": "^1.2.0-canary.2"
   },
   "devDependencies": {

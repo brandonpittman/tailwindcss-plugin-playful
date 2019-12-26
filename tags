@@ -9,6 +9,5 @@ components.overflow	lib/buttons/slide.js	/^      overflow: 'hidden',$/;"	p
 components.transition	lib/buttons/slide.js	/^      transition: 'color 200ms ease-in-out',$/;"	p
 const.down	lib/buttons/slide.js	/^  down: { direction: 'top', axis: 'Y' },$/;"	p
 module.exports	lib/spinners/donut.js	/^module.exports = function ({addComponents}) {$/;"	f
-module.exports.config	index.js	/^  config: {$/;"	p
 module.exports.env	.eslintrc.js	/^  env: {$/;"	p
-module.exports.variants	tailwind.config.js	/^  variants: {$/;"	p
+module.exports.plugins	tailwind.config.js	/^  plugins: [$/;"	p
