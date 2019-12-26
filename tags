@@ -11,4 +11,4 @@ const.down	lib/buttons/slide.js	/^  down: { direction: 'top', axis: 'Y' },$/;"	p
 module.exports	lib/spinners/donut.js	/^module.exports = function ({addComponents}) {$/;"	f
 module.exports.config	index.js	/^  config: {$/;"	p
 module.exports.env	.eslintrc.js	/^  env: {$/;"	p
-module.exports.theme	tailwind.config.js	/^  theme: {$/;"	p
+module.exports.variants	tailwind.config.js	/^  variants: {$/;"	p
